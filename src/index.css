@@ -62,3 +62,8 @@ button:focus-visible {
     background-color: var(--bg);
   }
 }
+
+
+* {
+  opacity: 1;
+}
