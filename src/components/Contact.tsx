@@ -30,8 +30,7 @@ const Contact: FC = () => {
           </motion.a>
           <motion.a
             whileHover={{ scale: 0.9 }}
-            href='
-        www.linkedin.com/in/aksandr-al-ghazali'
+            href='https://www.linkedin.com/in/aksandr-al-ghazali'
             className='flex items-center gap-2 rounded-md bg-projectBg text-text shadow-2xl p-3 hover:shadow-[0px_0px_35px_-2px_#646cff]  duration-400'
           >
             <img className='w-[70px]' src={linkedIn} alt='' />
