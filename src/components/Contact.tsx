@@ -5,11 +5,19 @@ import linkedIn from '../assets/contact/LinkedIn.svg';
 import { FaGithub } from 'react-icons/fa';
 import { FC } from 'react';
 import { motion } from 'framer-motion';
+import { blockVariants } from '../types';
 
 const Contact: FC = () => {
   return (
     <BlockWrapper>
-      <div className='flex flex-col gap-3 mb-[80px]' id="contact">
+      <motion.div
+        initial='offscreen'
+        whileInView='onscreen'
+        viewport={{ once: false }}
+        variants={blockVariants}
+        className='flex flex-col gap-3 mb-[80px]'
+        id='contact'
+      >
         <h2 className='text-[60px] block'>Contact Me</h2>
         <div className='flex gap-3 flex-wrap'>
           <motion.a
@@ -45,7 +53,7 @@ const Contact: FC = () => {
             <p className='text-3xl'>Dragodui</p>
           </motion.a>
         </div>
-      </div>
+      </motion.div>
     </BlockWrapper>
   );
 };

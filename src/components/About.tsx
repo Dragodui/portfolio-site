@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { frontEnd, backEnd, databases, codeEditors } from '../technologies';
-import { ITechnology } from '../types';
+import { blockVariants, ITechnology } from '../types';
 import BlockWrapper from './BlockWrapper';
 import { motion } from 'framer-motion';
 import { FaFileDownload } from 'react-icons/fa';
@@ -9,8 +9,17 @@ import cv from '../assets/Aksandr Al-Ghazali CV.pdf';
 const About: FC = () => {
   return (
     <BlockWrapper>
-      <div className='flex flex-col' id="about">
-        <h1 className='text-[80px] font-medium mb-5 animate-rotate-y animate-infinite animate-duration-[600ms]'>Aksandr Al-Ghazali</h1>
+      <motion.div
+        initial='offscreen'
+        whileInView='onscreen'
+        viewport={{ once: false }}
+        variants={blockVariants}
+        className='flex flex-col'
+        id='about'
+      >
+        <h1 className='text-[80px] font-medium mb-5 animate-rotate-y animate-infinite animate-duration-[600ms]'>
+          Aksandr Al-Ghazali
+        </h1>
         <h2 className='text-[60px]'>About Me</h2>
         <p className='text-2xl pt-5 text-left max-w-[600px]'>
           Hi, I`m Aksandr Al-Ghazali, Junior Full-stack developer located in
@@ -62,7 +71,7 @@ const About: FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </BlockWrapper>
   );
 };
