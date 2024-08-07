@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaRegMoon } from "react-icons/fa";
 import { FaRegSun } from "react-icons/fa";

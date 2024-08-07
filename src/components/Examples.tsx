@@ -4,8 +4,8 @@ import BlockWrapper from "./BlockWrapper";
 const Examples = () => {
 
     return (
-        <BlockWrapper id="projects" >
-            <div className="flex flex-col">
+        <BlockWrapper>
+            <div className="flex flex-col" id="projects">
                 <h1 className="text-[60px] inline mb-7 text-left">My Projects</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
                     <Example 

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { frontEnd, backEnd, databases, codeEditors } from '../technologies';
 import { ITechnology } from '../types';
 import BlockWrapper from './BlockWrapper';
@@ -8,8 +8,8 @@ import cv from '../assets/Aksandr Al-Ghazali CV.pdf';
 
 const About: FC = () => {
   return (
-    <BlockWrapper id="about">
-      <div className='flex flex-col'>
+    <BlockWrapper>
+      <div className='flex flex-col' id="about">
         <h1 className='text-[80px] font-medium mb-5 animate-rotate-y animate-infinite animate-duration-[600ms]'>Aksandr Al-Ghazali</h1>
         <h2 className='text-[60px]'>About Me</h2>
         <p className='text-2xl pt-5 text-left max-w-[600px]'>

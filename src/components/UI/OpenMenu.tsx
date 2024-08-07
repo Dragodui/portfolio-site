@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import { motion } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
 

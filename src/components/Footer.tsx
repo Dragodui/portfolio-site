@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import BlockWrapper from './BlockWrapper';
 
 const Footer: FC = () => {
