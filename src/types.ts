@@ -13,7 +13,7 @@ export const blockVariants: Variants = {
       opacity: 1,
       transition: {
         type: "spring",
-        duration: 0.8
+        duration: 1
       }
     }
   };
