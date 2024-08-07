@@ -13,7 +13,7 @@ const OpenMenu: FC = () => {
         }}
         animate={
           isMenuOpen
-            ? { borderRadius: '20%', scale: 1.2, background: 'var(--myBlack)' }
+            ? { borderRadius: '50%', scale: 1.2, background: 'var(--myBlack)' }
             : { borderRadius: '20%', scale: 1, background: 'var(--myBlack)' }
         }
         className='z-40 fixed top-[20px] right-[20px] w-[50px] h-[50px] flex items-center justify-center cursor-pointer'
