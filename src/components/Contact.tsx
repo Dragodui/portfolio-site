@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 const Contact: FC = () => {
   return (
     <BlockWrapper>
-      <div className='flex flex-col gap-3 mb-[80px]'>
+      <div className='flex flex-col gap-3 mb-[80px]' id="contact">
         <h2 className='text-[60px] block'>Contact Me</h2>
         <div className='flex gap-3 flex-wrap'>
           <motion.a
