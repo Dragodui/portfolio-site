@@ -40,6 +40,12 @@ const Examples = () => {
             githubLink='https://github.com/Dragodui/weather-app'
             title='Weather App'
           />
+          <Example
+            photo='https://github.com/user-attachments/assets/72b11335-cc8a-4fd7-9243-b3608acf2feb'
+            siteLink='/'
+            githubLink='https://github.com/Dragodui/delivery-app'
+            title='Delivery App'
+          />
         </div>
       </motion.div>
     </BlockWrapper>

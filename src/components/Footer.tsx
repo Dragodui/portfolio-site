@@ -7,7 +7,7 @@ const Footer: FC = () => {
             <BlockWrapper>
                 <div className="flex w-full py-3 justify-between">
                     <p className='md:flex hidden text-[27px] font-medium'>Aksandr Al-Ghazali</p>
-                    <a href='mailto:alghazaliaks123@gmail.com' className='text-[27px] font-medium'>alghazaliaks123@gmail.com</a>
+                    <a href='mailto:alghazaliaks123@gmail.com' className='sm:text-[27px] text-[20px] font-medium'>alghazaliaks123@gmail.com</a>
                 </div>
             </BlockWrapper>
         </footer>
