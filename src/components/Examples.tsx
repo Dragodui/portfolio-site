@@ -14,7 +14,7 @@ const Examples = () => {
         className='flex flex-col'
         id='projects'
       >
-        <h1 className='text-[60px] inline mb-7 text-left'>My Projects</h1>
+        <h1 className='text-[60px] inline mb-7 text-left font-bold'>My Projects</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px]'>
           <Example
             photo='https://mini.s-shot.ru/1920x1200/JPEG/1920/Z240/?https%3A%2F%2Fdragodui.github.io%2Fto-do-list-on-react%2F'

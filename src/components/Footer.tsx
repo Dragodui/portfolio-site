@@ -3,7 +3,7 @@ import BlockWrapper from './BlockWrapper';
 
 const Footer: FC = () => {
     return (
-        <footer className='w-full flex justify-center'>
+        <footer className='w-full flex justify-center font-jb'>
             <BlockWrapper>
                 <div className="flex w-full py-3 justify-between">
                     <p className='md:flex hidden text-[27px] font-medium'>Aksandr Al-Ghazali</p>

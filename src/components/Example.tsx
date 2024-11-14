@@ -13,7 +13,7 @@ const Example: FC<IProps> = ({ githubLink, siteLink, photo, title }) => {
     <a
       href={siteLink}
       target='_blank'
-      className='rounded-md bg-projectBg shadow-2xl flex flex-col justify-between'
+      className='rounded-md bg-projectBg shadow-2xl flex flex-col justify-between font-jb'
       rel='noreferrer'
       title='link to the demo'
     >

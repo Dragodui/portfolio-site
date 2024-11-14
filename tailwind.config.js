@@ -14,6 +14,9 @@ export default {
         'projectBg': 'var(--projectBg)', 
       }
     },
+    fontFamily: {
+      'jb': ['JetBrains Mono', 'monospace']
+    }
   },
   plugins: [],
 }

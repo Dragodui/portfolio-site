@@ -49,7 +49,7 @@ const OpenMenu: FC = () => {
         <ThemeToggle />
         <motion.a
           whileHover={{ scale: 1.1 }}
-          className='text-text text-5xl  hover:shadow-[0px_0px_35px_-2px_#646cff]  duration-400 transition-all px-5 py-3 rounded-lg'
+          className='text-text text-5xl   transition-all px-5 py-3 rounded-lg'
           href='#about'
           onClick={() => setIsMenuOpen(false)}
         >
@@ -57,7 +57,7 @@ const OpenMenu: FC = () => {
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.1 }}
-          className='text-text text-5xl  hover:shadow-[0px_0px_35px_-2px_#646cff]  duration-400 transition-all px-5 py-3 rounded-lg'
+          className='text-text text-5xl   transition-all px-5 py-3 rounded-lg'
           href='#projects'
           onClick={() => setIsMenuOpen(false)}
         >
@@ -65,7 +65,7 @@ const OpenMenu: FC = () => {
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.1 }}
-          className='text-text text-5xl  hover:shadow-[0px_0px_35px_-2px_#646cff]  duration-400 transition-all px-5 py-3 rounded-lg'
+          className='text-text text-5xl   transition-all px-5 py-3 rounded-lg'
           href='#contact'
           onClick={() => setIsMenuOpen(false)}
         >

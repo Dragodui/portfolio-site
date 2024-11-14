@@ -18,12 +18,12 @@ const Contact: FC = () => {
         className='flex flex-col gap-3 mb-[80px]'
         id='contact'
       >
-        <h2 className='text-[60px] block'>Contact Me</h2>
-        <div className='flex gap-3 flex-wrap'>
+        <h2 className='text-[60px] block font-bold'>Contact Me</h2>
+        <div className='flex gap-5 flex-wrap font-jb'>
           <motion.a
             whileHover={{ scale: 0.9 }}
             href='https://t.me/dragodui'
-            className='flex items-center w-full sm:w-auto gap-2 rounded-md bg-projectBg shadow-2xl text-text p-3 hover:shadow-[0px_0px_35px_-2px_#646cff]  duration-400'
+            className='flex items-center w-full sm:w-auto gap-4 rounded-md  text-text p-3   duration-400'
           >
             <img className='w-[70px]' src={telegram} alt='' />
             <p className='text-3xl'>Telegram</p>
@@ -31,7 +31,7 @@ const Contact: FC = () => {
           <motion.a
             whileHover={{ scale: 0.9 }}
             href='mailto:alghazaliaks123@gmail.com'
-            className='flex items-center w-full sm:w-auto gap-2 rounded-md bg-projectBg text-text shadow-2xl p-3 hover:shadow-[0px_0px_35px_-2px_#646cff]  duration-400'
+            className='flex items-center w-full sm:w-auto gap-4 rounded-md text-text p-3   duration-400'
           >
             <img className='w-[70px]' src={gmail} alt='' />
             <p className='text-3xl'>Gmail</p>
@@ -39,7 +39,7 @@ const Contact: FC = () => {
           <motion.a
             whileHover={{ scale: 0.9 }}
             href='https://www.linkedin.com/in/aksandr-al-ghazali'
-            className='flex items-center gap-2 w-full sm:w-auto rounded-md bg-projectBg text-text shadow-2xl p-3 hover:shadow-[0px_0px_35px_-2px_#646cff]  duration-400'
+            className='flex items-center gap-4 w-full sm:w-auto rounded-md text-text p-3   duration-400'
           >
             <img className='w-[70px]' src={linkedIn} alt='' />
             <p className='text-3xl'>LinkedIn</p>
@@ -47,7 +47,7 @@ const Contact: FC = () => {
           <motion.a
             whileHover={{ scale: 0.9 }}
             href='https://github.com/Dragodui'
-            className='flex items-center gap-2 w-full sm:w-auto rounded-md bg-projectBg text-text shadow-2xl p-3 hover:shadow-[0px_0px_35px_-2px_#646cff]  duration-400'
+            className='flex items-center gap-4 w-full sm:w-auto rounded-md text-text p-3   duration-400'
           >
             <FaGithub className='w-[70px] h-[70px]' />
             <p className='text-3xl'>GitHub</p>
