@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import Terminal from './Terminal';
 import { useAppDispatch, useAppSelector } from '../store/store';
 import { changeDevmode } from '../store/features/devmodeSlice';
