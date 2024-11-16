@@ -2,18 +2,18 @@ import Header from './components/Header';
 import './index.css';
 import Footer from './components/Footer';
 import Content from './components/Content';
-import Particles, { initParticlesEngine } from "@tsparticles/react";
+import Particles, { initParticlesEngine } from '@tsparticles/react';
 import {
   type Container,
   type ISourceOptions,
   MoveDirection,
   OutMode,
-} from "@tsparticles/engine";
-import { loadSlim } from "@tsparticles/slim"; 
+} from '@tsparticles/engine';
+import { loadSlim } from '@tsparticles/slim';
 import { useMemo, useEffect, useState } from 'react';
+import TerminalModal from './components/TerminalModal';
 
 const App = () => {
-
   const [init, setInit] = useState(false);
   const [textColor, setTextColor] = useState<string>('#ffffff');
 
@@ -35,12 +35,12 @@ const App = () => {
     const themeInterval = setInterval(() => {
       const theme = localStorage.getItem('theme');
       if (theme === 'dark' || theme === '') {
-        getTextColor();  // Update textColor if the theme changes
+        getTextColor(); // Update textColor if the theme changes
       }
-    }, 500);  // Polling every 500ms (adjust as needed)
+    }, 500); // Polling every 500ms (adjust as needed)
 
     return () => {
-      clearInterval(themeInterval);  // Clear interval when component unmounts
+      clearInterval(themeInterval); // Clear interval when component unmounts
     };
   }, []);
 
@@ -53,10 +53,9 @@ const App = () => {
       fpsLimit: 120,
       interactivity: {
         events: {
-         
           onHover: {
             enable: true,
-            mode: "repulse",
+            mode: 'repulse',
           },
         },
         modes: {
@@ -100,7 +99,7 @@ const App = () => {
           value: 0.5,
         },
         shape: {
-          type: "circle",
+          type: 'circle',
         },
         size: {
           value: { min: 1, max: 5 },
@@ -108,15 +107,22 @@ const App = () => {
       },
       detectRetina: true,
     }),
-    [textColor],
+    [textColor]
   );
 
   return (
-    <div className='w-full flex items-center justify-center flex-col mt-[80px]'>
-      {init && <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />}
+    <div className="w-full flex items-center justify-center flex-col mt-[80px]">
+      {init && (
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+        />
+      )}
       <Header />
       <Content />
       <Footer />
+      <TerminalModal />
     </div>
   );
 };

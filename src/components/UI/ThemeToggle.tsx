@@ -1,7 +1,7 @@
 import { FC, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaRegMoon } from "react-icons/fa";
-import { FaRegSun } from "react-icons/fa";
+import { FaRegMoon } from 'react-icons/fa';
+import { FaRegSun } from 'react-icons/fa';
 
 const ThemeToggle: FC = () => {
   const [isThemeDark, setIsThemeDark] = useState(false);
@@ -37,7 +37,7 @@ const ThemeToggle: FC = () => {
       return newTheme;
     });
   };
-  console.log(isThemeDark)
+  console.log(isThemeDark);
   return (
     <div
       data-isOn={isThemeDark}
@@ -48,14 +48,10 @@ const ThemeToggle: FC = () => {
     >
       <motion.div
         transition={spring}
-        className='w-[30px] h-[30px] bg-myViolet rounded-full flex items-center justify-center'
+        className="w-[30px] h-[30px] bg-myViolet rounded-full flex items-center justify-center"
         layout
       >
-       {
-        isThemeDark
-        ?  <FaRegMoon />
-        : <FaRegSun />
-       }
+        {isThemeDark ? <FaRegMoon /> : <FaRegSun />}
       </motion.div>
     </div>
   );

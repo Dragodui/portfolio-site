@@ -16,20 +16,20 @@ const OpenMenu: FC = () => {
             ? { borderRadius: '50%', scale: 1.2, background: 'var(--myBlack)' }
             : { borderRadius: '20%', scale: 1, background: 'var(--myBlack)' }
         }
-        className='z-40 fixed top-[20px] right-[20px] w-[50px] h-[50px] flex items-center justify-center cursor-pointer'
+        className="z-40 fixed top-[20px] right-[20px] w-[50px] h-[50px] flex items-center justify-center cursor-pointer"
       >
-        <div className='flex flex-col items-center justify-between w-[30px] h-[19px]'>
+        <div className="flex flex-col items-center justify-between w-[30px] h-[19px]">
           <motion.div
             animate={
               isMenuOpen
                 ? { rotate: 45, y: 7, height: '5px', background: '#ff4545' }
                 : { background: 'var(--text)' }
             }
-            className='rounded-full w-full h-[3px] '
+            className="rounded-full w-full h-[3px] "
           ></motion.div>
           <motion.div
             animate={isMenuOpen ? { display: 'none' } : ''}
-            className='rounded-full w-full h-[3px] bg-text'
+            className="rounded-full w-full h-[3px] bg-text"
           ></motion.div>
           <motion.div
             animate={
@@ -37,7 +37,7 @@ const OpenMenu: FC = () => {
                 ? { rotate: 135, y: -7, height: '5px', background: '#ff4545' }
                 : { background: 'var(--text)' }
             }
-            className='rounded-full w-full h-[3px]'
+            className="rounded-full w-full h-[3px]"
           ></motion.div>
         </div>
       </motion.div>
@@ -49,24 +49,24 @@ const OpenMenu: FC = () => {
         <ThemeToggle />
         <motion.a
           whileHover={{ scale: 1.1 }}
-          className='text-text text-5xl   transition-all px-5 py-3 rounded-lg'
-          href='#about'
+          className="text-text text-5xl   transition-all px-5 py-3 rounded-lg"
+          href="#about"
           onClick={() => setIsMenuOpen(false)}
         >
           About me
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.1 }}
-          className='text-text text-5xl   transition-all px-5 py-3 rounded-lg'
-          href='#projects'
+          className="text-text text-5xl   transition-all px-5 py-3 rounded-lg"
+          href="#projects"
           onClick={() => setIsMenuOpen(false)}
         >
           My works
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.1 }}
-          className='text-text text-5xl   transition-all px-5 py-3 rounded-lg'
-          href='#contact'
+          className="text-text text-5xl   transition-all px-5 py-3 rounded-lg"
+          href="#contact"
           onClick={() => setIsMenuOpen(false)}
         >
           Contact
