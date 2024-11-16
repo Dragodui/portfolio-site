@@ -20,7 +20,7 @@ const About: FC = () => {
         <h1 className="text-[80px] font-jb font-medium mb-5 animate-rotate-y animate-infinite animate-duration-[600ms]">
           Aksandr Al-Ghazali
         </h1>
-        <h2 className="text-[60px] font-bold">About Me</h2>
+        <h2 className="text-[60px] font-medium">About Me</h2>
         <p className="text-2xl pt-5 text-left max-w-[600px] font-jb">
           Hi, I`m Aksandr Al-Ghazali, Junior Full-stack developer located in
           Szczecin, Poland

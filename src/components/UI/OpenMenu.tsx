@@ -49,7 +49,7 @@ const OpenMenu: FC = () => {
         <ThemeToggle />
         <motion.a
           whileHover={{ scale: 1.1 }}
-          className="text-text text-5xl   transition-all px-5 py-3 rounded-lg"
+          className="text-text text-5xl transition-all px-5 py-3 rounded-lg"
           href="#about"
           onClick={() => setIsMenuOpen(false)}
         >

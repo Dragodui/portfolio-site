@@ -18,7 +18,7 @@ const Contact: FC = () => {
         className="flex flex-col gap-3 mb-[80px]"
         id="contact"
       >
-        <h2 className="text-[60px] block font-bold">Contact Me</h2>
+        <h2 className="text-[60px] block font-medium">Contact Me</h2>
         <div className="flex gap-5 flex-wrap font-jb">
           <motion.a
             whileHover={{ scale: 0.9 }}
