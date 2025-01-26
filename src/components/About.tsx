@@ -17,7 +17,7 @@ const About: FC = () => {
         className="flex flex-col"
         id="about"
       >
-        <h1 className="text-[80px] font-jb font-medium mb-5 animate-rotate-y animate-infinite animate-duration-[600ms]">
+        <h1 className=" text-[64px] md:text-[80px] font-jb font-medium mb-5 animate-rotate-y animate-infinite animate-duration-[600ms]">
           Aksandr Al-Ghazali
         </h1>
         <h2 className="text-[40px] font-medium font-jb">About Me</h2>
