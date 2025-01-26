@@ -15,7 +15,7 @@ const Examples = () => {
         className="flex flex-col"
         id="projects"
       >
-        <h1 className="text-[60px] inline mb-7 text-left font-medium">
+        <h1 className="text-[58px] font-jb inline mb-7 text-left font-medium">
           My Projects
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
@@ -26,6 +26,7 @@ const Examples = () => {
               siteLink={project.demo}
               githubLink={project.GitHub}
               title={project.title}
+              description={project.description}
             />
           ))}
         </div>

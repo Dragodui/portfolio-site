@@ -19,6 +19,7 @@ export interface IProject {
   photo: string;
   GitHub: string;
   demo: string;
+  description: string;
 }
 
 export const blockVariants: Variants = {

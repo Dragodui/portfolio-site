@@ -12,7 +12,7 @@ export default {
       },
     },
     fontFamily: {
-      jb: ['JetBrains Mono', 'monospace'],
+      jb: ['Lexend Giga', 'serif'],
     },
   },
   plugins: [],
