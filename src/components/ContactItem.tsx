@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import React, { FC, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 
 interface ContactItemProps {
     link: string;
