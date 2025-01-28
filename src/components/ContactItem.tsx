@@ -11,7 +11,7 @@ const ContactItem: FC<ContactItemProps> = ({link, icon}) => {
     return (
         <motion.a
         href={link}
-        className="flex items-center gap-4 w-full sm:w-auto  text-text duration-400"
+        className="flex items-center gap-4 sm:w-auto  text-text duration-400"
       >
        {
             typeof icon === 'string' ? <img width="70" height="70" src={icon} alt="icon" /> : icon
